@@ -97,5 +97,26 @@ namespace Diziler
             int ort = toplam / sinavlar.Length;
             label5.Text = ort.ToString();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            int[] sayilar = { 1, 11, 12, 13, 4, 5, 6, 24, 44, 13};
+            int toplam = 0;
+            int elemansayısı = 0;
+            foreach (int x in sayilar)
+            {
+                if(x % 4 == 0)
+                {
+                 toplam = toplam + x;
+                listBox5.Items.Add(x);
+
+                    elemansayısı++; //eleman sayısı 1 er artır
+                    label7.Text = elemansayısı.ToString();
+                }
+            }
+            label6.Text = toplam.ToString();       
+
+
+        }
     }
 }
