@@ -46,12 +46,16 @@ namespace Diziler
             //string[] takimlar = { "Beşiktaş", "Fenerbahçe", "Galatasaray", "Trabzonspor" };
             //listBox1.Items.Add(takimlar[1]);
 
-            int[] takimlar = { 1903,1905,1907,1961 };
+            int[] takimlar = { 1903,1905,1907,1961,1911,2020};
 
             for (int i = 0; i < takimlar.Length; i++)
             //Length uzunluguna alır
             {
-                listBox1.Items.Add(takimlar[i].ToString());
+                if(takimlar[i] % 2 == 0)
+                {
+                    listBox1.Items.Add(takimlar[i]);
+                }
+               
             }
 
 
