@@ -60,5 +60,18 @@ namespace Diziler
 
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            int[] sayilar = {1,11,12,13,4,5,6,21,44,13,24};
+            for (int i = 0; i < sayilar.Length; i++)
+            {
+                if(sayilar[i]>10 && sayilar[i] % 2 == 0)
+                {
+                    listBox2.Items.Add(sayilar[i]);
+                }
+               
+            }
+        }
     }
 }
