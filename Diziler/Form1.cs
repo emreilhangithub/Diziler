@@ -25,5 +25,22 @@ namespace Diziler
             label1.Text = sayilar[3].ToString();
         
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            double[] ondaliklisayilar = {1.14,2.14,3.41,4.11,5.11};
+            label2.Text = ondaliklisayilar[1].ToString();
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            char[] charharf =
+                {'C','a','b','c','ç','d','e','f','g','ğ','h','ı','i', 'j', 'k', 'l', 'm', 'n', 'o', 'ö', 'p', 'r', 's', 'ş', 't', 'u', 'ü', 'v', 'y', 'z' };
+            label3.Text = charharf[27].ToString();
+        
+        }
+
+        
     }
 }
