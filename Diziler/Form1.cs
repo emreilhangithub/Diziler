@@ -73,5 +73,29 @@ namespace Diziler
                
             }
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            string[] kisiler = { "Ozanay", "Önder", "Mustafa", "Ersin", "Sinan", "Akif", "Emrah", "Ümit", "Utku" };
+            foreach (string k in kisiler)
+            {
+                listBox3.Items.Add(k);
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            int[]  sinavlar = { 70, 65, 85, 100, 90 };
+            int toplam = 0;
+            foreach (int x in sinavlar)
+            {
+                listBox4.Items.Add(x);
+                toplam = toplam + x;                
+            }
+            label4.Text = toplam.ToString();
+
+            int ort = toplam / sinavlar.Length;
+            label5.Text = ort.ToString();
+        }
     }
 }
