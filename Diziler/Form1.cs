@@ -43,14 +43,15 @@ namespace Diziler
 
         private void button4_Click(object sender, EventArgs e)
         {
-            string[] takimlar = { "Beşiktaş", "Fenerbahçe", "Galatasaray", "Trabzonspor" };
-
+            //string[] takimlar = { "Beşiktaş", "Fenerbahçe", "Galatasaray", "Trabzonspor" };
             //listBox1.Items.Add(takimlar[1]);
+
+            int[] takimlar = { 1903,1905,1907,1961 };
 
             for (int i = 0; i < takimlar.Length; i++)
             //Length uzunluguna alır
             {
-                listBox1.Items.Add(takimlar[i]);
+                listBox1.Items.Add(takimlar[i].ToString());
             }
 
 
